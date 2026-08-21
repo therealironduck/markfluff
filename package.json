@@ -1,0 +1,42 @@
+{
+  "name": "@therealironduck/markfluff",
+  "version": "0.0.0-dev",
+  "description": "A simple pure javascript markdown editor",
+  "homepage": "https://github.com/therealironduck/markfluff#readme",
+  "bugs": {
+    "url": "https://github.com/therealironduck/markfluff/issues"
+  },
+  "license": "MIT",
+  "author": "Jordan Kniest <mail@jkniest.de>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealironduck/markfluff.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "test:once": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "tsdown": "^0.22.5",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
