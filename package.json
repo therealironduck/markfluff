@@ -32,10 +32,10 @@
     "fmt:check": "oxfmt --check"
   },
   "devDependencies": {
-    "oxfmt": "^0.64.0",
+    "oxfmt": "^0.68.0",
     "oxlint": "^1.79.0",
     "oxlint-tsgolint": "^7.0.2001",
-    "tsdown": "^0.22.5",
+    "tsdown": "^0.23.0",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"
   }
